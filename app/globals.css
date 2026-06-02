@@ -234,3 +234,33 @@ a {
   background:
     rgba(255,255,255,0.03);
 }
+
+.marker {
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background: rgba(139, 92, 246, 0.2);
+
+  border: 1px solid rgba(139, 92, 246, 0.5);
+
+  backdrop-filter: blur(12px);
+
+  font-size: 14px;
+
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
