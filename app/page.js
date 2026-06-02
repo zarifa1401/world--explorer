@@ -1,14 +1,9 @@
-import HeroSection from "@/components/HeroSection";
-import StatsSection from "@/components/StatsSection";
+import HomeContent from "@/components/HomeContent";
 
 export default function HomePage() {
   return (
-    <div className="container-custom">
-
-      <HeroSection />
-
-      <StatsSection />
-
-    </div>
+    <main className="home-page">
+      <HomeContent />
+    </main>
   );
 }

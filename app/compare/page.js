@@ -1,25 +1,26 @@
-import CountrySearch from "@/components/CountrySearch";
+import CountryCompare from "@/components/CountryCompare";
 import { getAllCountries } from "@/lib/countries";
 
 export const metadata = {
-  title: "Search | World Explorer"
+  title: "Compare | World Explorer"
 };
 
-export default async function SearchPage() {
+export default async function ComparePage() {
   const countries = await getAllCountries("force-cache");
 
   return (
     <main className="mx-auto max-w-7xl px-5 py-10 lg:px-8">
       <section className="mb-8">
-        <p className="section-kicker">Search</p>
+        <p className="section-kicker">Compare</p>
         <h1 className="mt-3 text-4xl font-black text-white sm:text-5xl">
-          Find A Country
+          Compare Countries
         </h1>
         <p className="mt-4 max-w-2xl text-slate-300">
-          Search Afghanistan, Japan, Germany, or any country in the dataset.
+          Place two countries side by side and compare population, region,
+          capital, languages, currencies, and time zones.
         </p>
       </section>
-      <CountrySearch countries={countries} />
+      <CountryCompare countries={countries} />
     </main>
   );
 }
