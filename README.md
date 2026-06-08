@@ -38,3 +38,10 @@ Then open http://localhost:3000.
 https://world-explorer-blue-zeta.vercel.app/
 
 ```
+# Project Screenshots
+
+## Home Page
+![Home Page](./screenshots/home-page.png)
+
+## Countries Page
+![Details Page](./screenshots/details-page.png)
