@@ -41,7 +41,7 @@ https://world-explorer-blue-zeta.vercel.app/
 # Project Screenshots
 
 ## Home Page
-![Home Page](./screenshots/home-page.png)
+![Home Page](@/home.png)
 
 ## Countries Page
-![Details Page](./screenshots/details-page.png)
+![Countries Page](@/countries.png)
