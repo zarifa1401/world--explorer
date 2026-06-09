@@ -11,7 +11,7 @@ export default function CountryCard({ country, compact = false }) {
           alt={country.flags.alt || `${country.name.common} flag`}
           className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-space-950 via-space-950/10 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-space-950 via-space-950/10 to-transparent" />
         <Link className="absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full border border-white/20 bg-black/35 text-white backdrop-blur transition hover:bg-cyan-400/20" href="/favorites" aria-label={`Favorite ${country.name.common}`}>
           +
         </Link>

@@ -35,6 +35,9 @@ REST Countries API
 ## Countries Page
 ![Countries Page](./public/assets/countries.png)
 
+## Countries Page
+![Countries detail Page](./public/assets/details.png)
+
 ## Search Page
 ![Search Page](./public/assets/search.png)
 

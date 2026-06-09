@@ -6,21 +6,28 @@ export const metadata = {
 };
 
 export default async function CountriesPage({ searchParams }) {
-  // Get search query from URL
-  const searchQuery = searchParams?.search?.toLowerCase() || "";
+  // Next.js 16: searchParams is a Promise
+  const resolvedSearchParams = await searchParams;
 
-  // Fetch all countries (cached)
+  // Get search query from URL
+  const searchQuery =
+    resolvedSearchParams?.search?.toLowerCase() || "";
+
+  // Fetch all countries
   const countries = await getAllCountries("force-cache");
+
+  // Debug: check how many countries are returned
+  console.log("Countries fetched:", countries.length);
 
   // Filter countries based on search
   const filteredCountries = countries.filter((country) =>
     country.name.common.toLowerCase().includes(searchQuery)
   );
 
-  // Sort filtered results
-  const sortedCountries = filteredCountries
-    .sort((a, b) => a.name.common.localeCompare(b.name.common))
-    .slice(0, 60);
+  // Sort alphabetically
+  const sortedCountries = [...filteredCountries].sort((a, b) =>
+    a.name.common.localeCompare(b.name.common)
+  );
 
   return (
     <main className="mx-auto max-w-7xl px-5 py-10 lg:px-8">
@@ -37,12 +44,16 @@ export default async function CountriesPage({ searchParams }) {
             Countries API data.
           </p>
 
-          {/* Optional: show search result info */}
           {searchQuery && (
             <p className="mt-3 text-sm text-cyan-300">
-              Results for: <span className="font-semibold">{searchQuery}</span>
+              Results for:{" "}
+              <span className="font-semibold">{searchQuery}</span>
             </p>
           )}
+
+          <p className="mt-3 text-sm text-slate-400">
+            Total countries: {sortedCountries.length}
+          </p>
         </div>
       </section>
 
