@@ -25,6 +25,16 @@ World Explorer is a Next.js project that allows users to explore countries aroun
 
 REST Countries API
 
+# Project Screenshots
+
+## Home Page
+![Home Page](./public/assets/home.png)
+
+![Home Page 2](./public/assets/home2.png)
+
+## Countries Page
+![Countries Page](./public/assets/countries.png)
+
 ## Run Locally
 
 ```bash
@@ -38,12 +48,3 @@ Then open http://localhost:3000.
 https://world-explorer-blue-zeta.vercel.app/
 
 ```
-# Project Screenshots
-
-## Home Page
-![Home Page](./public/assets/home.png)
-
-![Home Page 2](./public/assets/home2.png)
-
-## Countries Page
-![Countries Page](./public/assets/countries.png)
