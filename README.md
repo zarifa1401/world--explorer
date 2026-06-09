@@ -35,6 +35,21 @@ REST Countries API
 ## Countries Page
 ![Countries Page](./public/assets/countries.png)
 
+## Search Page
+![Search Page](./public/assets/search.png)
+
+## Compare Page
+![Compare Page](./public/assets/compare.png)
+
+## Compare Page
+![Compare 2 Page](./public/assets/compare2.png)
+
+## Favorite Page
+![Favorite Page](./public/assets/favorite.png)
+
+## About Page
+![About Page](./public/assets/About.png)
+
 ## Run Locally
 
 ```bash
