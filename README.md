@@ -42,7 +42,8 @@ https://world-explorer-blue-zeta.vercel.app/
 
 ## Home Page
 ![Home Page](./public/assets/home.png)
-!(./public/assets/home2.png)
+
+![Home Page 2](./public/assets/home2.png)
 
 ## Countries Page
-![Countries Page]o(./public/assets/countries.png)
+![Countries Page](./public/assets/countries.png)
