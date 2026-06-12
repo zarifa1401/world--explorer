@@ -6,7 +6,7 @@ export const metadata = {
 };
 
 export default async function CountriesPage({ searchParams }) {
-  // Next.js 16: searchParams is a Promise
+  // Note: searchParams is a Promise, so we need to await it to get the actual parameters
   const resolvedSearchParams = await searchParams;
 
   // Get search query from URL
